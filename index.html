@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CotisApp</title>
+    <link rel="stylesheet" href="shared/app-theme.css">
+    <script>
+        const destination = localStorage.getItem("isLoggedIn") === "true"
+            ? "home/home.html"
+            : "login/login.html";
+        window.location.replace(destination);
+    </script>
+</head>
+<body>
+    <p>Opening CotisApp...</p>
+    <p><a href="login/login.html">Login</a> or <a href="home/home.html">open dashboard</a>.</p>
+</body>
+</html>
